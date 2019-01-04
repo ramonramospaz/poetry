@@ -1,0 +1,18 @@
+Ruta a usar 
+http://ws.spotify.com/search/1/track.json?q="lo que quieres"
+paso 1
+import urllib2
+response = urllib2.urlopen('http://python.org/')
+html = response.read()
+paso 2
+import json
+
+with open('data.json') as data_file:    
+    data = json.load(data_file)
+
+data se prodra leer 
+data["maps"][0]["id"]  # will return 'blabla'
+data["masks"]["id"]    # will return 'valore'
+data["om_points"]      # will return 'value'
+
+

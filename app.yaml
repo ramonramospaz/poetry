@@ -1,0 +1,17 @@
+application: ramontarea2web
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html 
+  
+- url: /index.css
+  static_files: index.css
+  upload: index.css 
+
+- url: /.*
+  script: SearchPage.application
